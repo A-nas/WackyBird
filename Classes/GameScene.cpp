@@ -29,6 +29,10 @@ bool GameScene::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
+    //adding a backround
+    auto backroundSprite = Sprite::create("backround.png");
+    backroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x ,visibleSize.height / 2 + origin.y));
+    this->addChild(backroundSprite);
+
     return true;
 }

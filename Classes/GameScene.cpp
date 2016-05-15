@@ -5,11 +5,14 @@ USING_NS_CC;
 Scene* GameScene::createScene()
 {
     // 'scene' is an autorelease object
-    auto scene = Scene::create();
-    
-    // 'layer' is an autorelease object
-    auto layer = GameScene::create();
+    // create the scene as Physics World
+    auto scene = Scene::createWithPhysics();
+    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
+    // 'layer' is an autorelease object
+    // **set the layer of te same physics world of scene
+    auto layer = GameScene::create();
+    layer->SetPhysicsWorld(scene->getPhysicsWorld());
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -26,9 +29,19 @@ bool GameScene::init()
     {
         return false;
     }
-    
+
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
+    //adding a backround
+    auto backroundSprite = Sprite::create("backround.png");
+    backroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x ,visibleSize.height / 2 + origin.y));
+    this->addChild(backroundSprite);
+    //** edgeBody = PhysicsBody::createEdgeBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT,3);
+    auto edgeBody = PhysicsBody::createEdgeBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT, 3 );
+    auto edgeNode = Node::create();
+    edgeNode->setPosition(Point(visibleSize.width / 2 + origin.x ,visibleSize.height / 2 + origin.y));
+    edgeNode->setPhysicsBody(edgeBody);
+    this->addChild(edgeNode);
+
     return true;
 }

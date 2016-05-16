@@ -32,7 +32,7 @@ bool MainMenuScene::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     //creating backround
-    auto backroundSprite = Sprite::create("backround.png");
+    auto backroundSprite = Sprite::create("Background.png");
     backroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x ,visibleSize.height / 2 + origin.y));
     this->addChild(backroundSprite);
     //creating title Menu

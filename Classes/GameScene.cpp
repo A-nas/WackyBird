@@ -9,7 +9,7 @@ Scene* GameScene::createScene()
     // create the scene as Physics World
     auto scene = Scene::createWithPhysics();
     //* set all physics object strokes in red (must be disabled when publish game)
-    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);  <-- generated an error interpretation :'(
 
     // 'layer' is an autorelease object
     // **set the layer of te same physics world of scene
@@ -46,11 +46,11 @@ bool GameScene::init()
     this->addChild(edgeNode);
 
     //spawning pipes selon la largeur du device utilisé
-    this->schedule(schedule_selector(GameScene::SpawnPipe),PIPE_SPAWN_FREQUENCY * visibleSize.width ); // * visibleSize.width (multiPlatform)
+    this->schedule(schedule_selector(GameScene::SpawnPipe),0.5); // * visibleSize.width (multiPlatform)
 
     return true;
 }
 
 void GameScene::SpawnPipe(float dt){
-    pipe.SpawnPipe(this);
+    pipe.SpawnPipe1(this);
 }

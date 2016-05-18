@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "Definitions.h"
 
 USING_NS_CC;
 
@@ -7,6 +8,7 @@ Scene* GameScene::createScene()
     // 'scene' is an autorelease object
     // create the scene as Physics World
     auto scene = Scene::createWithPhysics();
+    //* set all physics object strokes in red (must be disabled when publish game)
     scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
     // 'layer' is an autorelease object
@@ -43,5 +45,12 @@ bool GameScene::init()
     edgeNode->setPhysicsBody(edgeBody);
     this->addChild(edgeNode);
 
+    //spawning pipes selon la largeur du device utilisé
+    this->schedule(schedule_selector(GameScene::SpawnPipe),PIPE_SPAWN_FREQUENCY * visibleSize.width ); // * visibleSize.width (multiPlatform)
+
     return true;
+}
+
+void GameScene::SpawnPipe(float dt){
+    pipe.SpawnPipe(this);
 }

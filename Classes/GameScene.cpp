@@ -44,7 +44,7 @@ bool GameScene::init()
     this->addChild(edgeNode);
 
     //spawning pipes selon la largeur du device utilisé
-    this->schedule(schedule_selector(GameScene::SpawnPipe),PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
+    this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
 
     return true;
 }

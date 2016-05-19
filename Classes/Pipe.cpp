@@ -68,7 +68,7 @@ void Pipe::SpawnPipe1( cocos2d::Layer *layer )
         random = UPPER_SCREEN_PIPE_THRESHOLD;
     }
     
-    auto topPipePosition = ( random * visibleSize.height ) + ( topPipe->getContentSize( ).height / 2 );
+    auto topPipePosition = ( random * visibleSize.height ) + ( topPipe->getContentSize().height / 2 );
     
     topPipeBody->setDynamic( false );
     bottomPipeBody->setDynamic( false );
@@ -76,10 +76,33 @@ void Pipe::SpawnPipe1( cocos2d::Layer *layer )
     topPipe->setPhysicsBody( topPipeBody );
     bottomPipe->setPhysicsBody( bottomPipeBody );
     
-    topPipe->setPosition( Point( visibleSize.width + topPipe->getContentSize().width + origin.x
-                                ,topPipePosition ) );
+    //topPipe->setPosition( Point( visibleSize.width + topPipe->getContentSize().width + origin.x
+    //                            ,topPipePosition ) );
 
-    bottomPipe->setPosition( Point( topPipe->getPositionX(), topPipePosition - ( Sprite::create( "Ball.png" )->getContentSize( ).height * PIPE_GAP ) - topPipe->getContentSize().height ) );
+    //bottomPipe->setPosition( Point( topPipe->getPositionX(), topPipePosition - ( Sprite::create( "Ball.png" )->getContentSize( ).height * PIPE_GAP ) - topPipe->getContentSize().height ) );
+
+    // new pipes position
+    //setting the random number between min and max
+    auto minY = origin.y
+                + Sprite::create( "Ball.png" )->getContentSize( ).height/4
+                - (topPipe->getContentSize().height/2);
+    
+    auto maxY = origin.y 
+                - Sprite::create( "Ball.png" )->getContentSize( ).height/4
+                - Sprite::create( "Ball.png" )->getContentSize( ).height
+                - Sprite::create( "Ball.png" )->getContentSize( ).height/3
+                + visibleSize.height
+                - topPipe->getContentSize().height/2;
+    
+    //float randNum = rand()% (float)(maxY-minY + 1.0) + minY;
+    float randNum = minY + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(maxY-minY)));
+    //setting position
+    bottomPipe->setPosition(Point(visibleSize.width + topPipe->getContentSize().width + origin.x
+                                  ,randNum));
+
+    topPipe->setPosition(Point(bottomPipe->getPositionX()
+                               ,bottomPipe->getPositionY() + Sprite::create( "Ball.png" )->getContentSize( ).height + (Sprite::create( "Ball.png" )->getContentSize( ).height/3) + (topPipe->getContentSize().height)));
+    // end new pipe possition
 
     layer->addChild( topPipe );
     layer->addChild( bottomPipe );

@@ -6,15 +6,13 @@ USING_NS_CC;
 Scene* GameScene::createScene()
 {
     // 'scene' is an autorelease object
-    // create the scene as Physics World
-    auto scene = Scene::createWithPhysics();
-    //* set all physics object strokes in red (must be disabled when publish game)
-    //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);  <-- generated an error interpretation :'(
-
+    auto scene = Scene::createWithPhysics( );
+    //scene->getPhysicsWorld( )->setDebugDrawMask( PhysicsWorld::DEBUGDRAW_ALL ); PROBLEM TO DRAW DEBUG MODE :(
+    
     // 'layer' is an autorelease object
-    // **set the layer of te same physics world of scene
     auto layer = GameScene::create();
-    layer->SetPhysicsWorld(scene->getPhysicsWorld());
+    layer->SetPhysicsWorld( scene->getPhysicsWorld( ) );
+
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -46,7 +44,7 @@ bool GameScene::init()
     this->addChild(edgeNode);
 
     //spawning pipes selon la largeur du device utilisé
-    this->schedule(schedule_selector(GameScene::SpawnPipe),0.5); // * visibleSize.width (multiPlatform)
+    this->schedule(schedule_selector(GameScene::SpawnPipe),PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
 
     return true;
 }

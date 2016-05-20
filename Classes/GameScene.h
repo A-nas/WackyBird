@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 
 #include "Pipe.h"
+#include "Bird.h"
 
 class GameScene : public cocos2d::Layer
 {
@@ -25,6 +26,7 @@ private:
 	
 	cocos2d::PhysicsWorld *sceneWorld;
     Pipe pipe;
+    Bird *bird;
 };
 
 #endif // __GAME_SCENE_H__

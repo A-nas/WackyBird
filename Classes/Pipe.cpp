@@ -56,7 +56,7 @@ void Pipe::SpawnPipe1( cocos2d::Layer *layer )
     
     auto topPipeBody = PhysicsBody::createBox( topPipe->getContentSize( ) );
     auto bottomPipeBody = PhysicsBody::createBox( bottomPipe->getContentSize( ) );
-    
+   /* 
     auto random = CCRANDOM_0_1( );
     
     if ( random < LOWER_SCREEN_PIPE_THRESHOLD )
@@ -68,7 +68,7 @@ void Pipe::SpawnPipe1( cocos2d::Layer *layer )
         random = UPPER_SCREEN_PIPE_THRESHOLD;
     }
     
-    auto topPipePosition = ( random * visibleSize.height ) + ( topPipe->getContentSize().height / 2 );
+    auto topPipePosition = ( random * visibleSize.height ) + ( topPipe->getContentSize().height / 2 ); */
     
     topPipeBody->setDynamic( false );
     bottomPipeBody->setDynamic( false );

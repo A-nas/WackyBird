@@ -45,7 +45,7 @@ bool GameScene::init()
 
     //spawning pipes selon la largeur du device utilisé
     this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
-
+    bird = new Bird(this);
     return true;
 }
 

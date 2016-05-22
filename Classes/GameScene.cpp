@@ -12,14 +12,9 @@ Scene* GameScene::createScene()
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
     layer->SetPhysicsWorld( scene->getPhysicsWorld( ) );
-
     // add layer as a child to scene
     scene->addChild(layer);
 
-    //PhysicsWorld* world = scene->getPhysicsWorld();
-    //world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
-
-    // return the scene
     return scene;
 }
 
@@ -49,6 +44,7 @@ bool GameScene::init()
     //spawning pipes selon la largeur du device utilisé
     this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
     bird = new Bird(this); // bird recois ladresse de linstance de lobjet crée + create the bird on the layer (GameScene here) with the pointer.
+    
     return true;
 }
 

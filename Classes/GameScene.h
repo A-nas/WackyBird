@@ -23,7 +23,7 @@ private:
 	// create an inline fct to modify the Physics World later.
 	void SetPhysicsWorld(cocos2d::PhysicsWorld *world){ sceneWorld = world; };
     void SpawnPipe(float dt);
-	
+
 	cocos2d::PhysicsWorld *sceneWorld;
     Pipe pipe;
     Bird *bird;

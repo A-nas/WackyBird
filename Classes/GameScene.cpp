@@ -17,16 +17,16 @@ Scene* GameScene::createScene()
     // add layer as a child to scene
     
 
-    //
+    /*
     PhysicsWorld* world = scene->getPhysicsWorld();
     Device::setAccelerometerEnabled(true);
     auto listener = EventListenerAcceleration::create([=](Acceleration*
     acc, Event* event){
-    auto gravity = Vec2(acc->x*200.0f, acc->y*200.0f);
+    auto gravity = Vec2(acc->x*400.0f, acc->y*400.0f);
     world->setGravity(gravity);
     });
     scene->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, scene);
-    //
+    */
 
 
     scene->addChild(layer);
@@ -64,7 +64,6 @@ bool GameScene::init()
     //spawning pipes selon la largeur du device utilisé
     this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
     bird = new Bird(this); // bird recois ladresse de linstance de lobjet crée + create the bird on the layer (GameScene here) with the pointer.
-    
     //collision test
     auto contactListener =
     EventListenerPhysicsContact::create();

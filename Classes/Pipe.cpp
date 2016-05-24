@@ -35,6 +35,12 @@ void Pipe::SpawnPipe(cocos2d::Layer *layer){
      topPipe->setPhysicsBody(topPipeBody);
      bottomPipe->setPhysicsBody(bottomPipeBody);
 
+    //collision handle
+     topPipeBody->setCollisionBitmask(OBSTACLE_COLLISION_BITMASK);
+     topPipeBody->setContactTestBitmask(true);
+     bottomPipeBody->setCollisionBitmask(OBSTACLE_COLLISION_BITMASK);
+     bottomPipeBody->setContactTestBitmask(true);
+
      topPipe->setPosition(Point(visibleSize.width/2 + topPipe->getContentSize().width + origin.x + CCRANDOM_MINUS1_1() * 250 , topPipePosition));
      bottomPipe->setPosition(Point(topPipe->getPositionX()
                             ,topPipePosition - (Sprite::create("Ball.png")->getContentSize().height * PIPE_GAP) - topPipe->getContentSize().height));

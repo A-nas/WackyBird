@@ -73,8 +73,6 @@ bool GameScene::init()
     auto shapeB = contact.getShapeB();
     auto bodyB = shapeB->getBody();
     //add here the gameOverScene redirection !
-    
-
     return true;
     };
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
@@ -84,9 +82,10 @@ bool GameScene::init()
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->setSwallowTouches(true);
     //CC_CALLBACK_2(GameScene::OnTouchBegan , this); is not working :( 
-    touchListener->onTouchBegan = [](cocos2d::Touch *touch,cocos2d::Event *event){
+    touchListener->onTouchBegan = [](cocos2d::Touch* touch, cocos2d::Event* event){
         CCLOG("TOUCHED !!!");
-    }
+        return true;
+    };
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener , this);
     // End tap listener
 

@@ -1,9 +1,9 @@
-#ifndef __GAME_OVER_H__
-#define __GAME_OVER_H__
+#ifndef __GAME_OVER_SCENE_H__
+#define __GAME_OVER_SCENE_H__
 
 #include "cocos2d.h"
 
-class GameOver : public cocos2d::Layer
+class GameOverScene : public cocos2d::Layer
 {
 public:
     static cocos2d::Scene* createScene();
@@ -14,7 +14,7 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     
     // implement the "static create()" method manually
-    CREATE_FUNC(GameOver);
+    CREATE_FUNC(GameOverScene);
 };
 
-#endif // __GAME_OVER_H__
+#endif // __GAME_OVER_SCENE_H__

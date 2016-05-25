@@ -3,6 +3,7 @@
 #include "GameOverScene.h"
 
 
+
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -16,7 +17,6 @@ Scene* GameScene::createScene()
     layer->SetPhysicsWorld( scene->getPhysicsWorld( ) );
     // add layer as a child to scene
     
-
     /*
     PhysicsWorld* world = scene->getPhysicsWorld();
     Device::setAccelerometerEnabled(true);
@@ -65,8 +65,7 @@ bool GameScene::init()
     this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width); // * visibleSize.width (multiPlatform)
     bird = new Bird(this); // bird recois ladresse de linstance de lobjet crée + create the bird on the layer (GameScene here) with the pointer.
     //collision test
-    auto contactListener =
-    EventListenerPhysicsContact::create();
+    auto contactListener = EventListenerPhysicsContact::create();
     contactListener->onContactBegin = [](PhysicsContact& contact){
     CCLOG("contact begin");
     auto shapeA = contact.getShapeA();
@@ -74,12 +73,22 @@ bool GameScene::init()
     auto shapeB = contact.getShapeB();
     auto bodyB = shapeB->getBody();
     //add here the gameOverScene redirection !
+    
+
     return true;
     };
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
     //End collision test
 
-
+    //Add tap listener
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->setSwallowTouches(true);
+    //CC_CALLBACK_2(GameScene::OnTouchBegan , this); is not working :( 
+    touchListener->onTouchBegan = [](cocos2d::Touch *touch,cocos2d::Event *event){
+        CCLOG("TOUCHED !!!");
+    }
+    Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener , this);
+    // End tap listener
 
 
 
@@ -90,3 +99,13 @@ bool GameScene::init()
 void GameScene::SpawnPipe(float dt){
     pipe.SpawnPipe1(this);
 }
+
+void GameScene::OnTouchBegan(cocos2d::Touch *touch,cocos2d::Event *event){
+
+}
+
+void GameScene::GoToGameOverScene(float dt){
+    auto scene = GameOverScene::createScene();
+    Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME , scene ));
+}
+

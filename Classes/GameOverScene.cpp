@@ -2,13 +2,13 @@
 
 USING_NS_CC;
 
-Scene* GameOver::createScene()
+Scene* GameOverScene::createScene()
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
     // 'layer' is an autorelease object
-    auto layer = GameOver::create();
+    auto layer = GameOverScene::create();
 
     // add layer as a child to scene
     scene->addChild(layer);
@@ -18,7 +18,7 @@ Scene* GameOver::createScene()
 }
 
 // on "init" you need to initialize your instance
-bool GameOver::init()
+bool GameOverScene::init()
 {
     //////////////////////////////
     // 1. super init first

@@ -24,7 +24,7 @@ private:
 	void SetPhysicsWorld(cocos2d::PhysicsWorld *world){ sceneWorld = world; };
     void SpawnPipe(float dt);
     void OnTouchBegan(cocos2d::Touch *touch,cocos2d::Event *event);
-    void GoToGameOverScene(float dt);
+    void GoToGameOverScene();
 
 	cocos2d::PhysicsWorld *sceneWorld;
     Pipe pipe;

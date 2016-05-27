@@ -73,6 +73,9 @@ bool GameScene::init()
     auto shapeB = contact.getShapeB();
     auto bodyB = shapeB->getBody();
     //add here the gameOverScene redirection !
+    //Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
+    auto scene = GameOverScene::createScene();
+    Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME , scene ));
     return true;
     };
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
@@ -103,7 +106,9 @@ void GameScene::OnTouchBegan(cocos2d::Touch *touch,cocos2d::Event *event){
 
 }
 
-void GameScene::GoToGameOverScene(float dt){
+
+// je ne peux pas appeler cette fonction a l'interieur du listener error : this was not captured for this lambda fucntion
+void GameScene::GoToGameOverScene(){
     auto scene = GameOverScene::createScene();
     Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME , scene ));
 }

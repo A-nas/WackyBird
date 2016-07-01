@@ -24,7 +24,10 @@ void Bird::Fall(){
     if(true == IsFalling){
         flappyBird->setPositionX(visibleSize.width/2 + origin.x);
         flappyBird->setPositionY(flappyBird->getPositionY() - (BIRD_FALLING_SPEED * visibleSize.height));
+    }else{
+        flappyBird->setPositionX(visibleSize.width/2 + origin.x);
+        flappyBird->setPositionY(flappyBird->getPositionY() + (BIRD_FALLING_SPEED * visibleSize.height));
     }
 }
-void Bird::Fly();
+void Bird::Fly(){IsFalling = true;}
 void Bird::StopFliying();

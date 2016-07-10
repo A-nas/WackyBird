@@ -86,13 +86,15 @@ bool GameScene::init()
     //CC_CALLBACK_2(GameScene::OnTouchBegan , this); is not working :( 
     touchListener->onTouchBegan = [](cocos2d::Touch* touch, cocos2d::Event* event){
         CCLOG("TOUCHED !!!");
+        bird->Fly();
+        this->scheduleOnce(schedule_selector(GameScene::StopFlying, BIRD_FLY_DURATION ) );
         return true;
     };
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener , this);
     // End tap listener
 
 
-
+    this->scheduleUpdate();
 
     return true;
 }
@@ -112,3 +114,13 @@ void GameScene::GoToGameOverScene(){
     Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME , scene ));
 }
 
+// methode for fly
+
+
+void GameScene::StopFlying(float dt){
+    bird->StopFlying();
+}
+
+void GameScene::update(float dt){
+    bird->Fall();
+}

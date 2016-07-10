@@ -25,6 +25,8 @@ private:
     void SpawnPipe(float dt);
     void OnTouchBegan(cocos2d::Touch *touch,cocos2d::Event *event);
     void GoToGameOverScene();
+    void StopFlying(float dt);
+    void update(float dt);
 
 	cocos2d::PhysicsWorld *sceneWorld;
     Pipe pipe;

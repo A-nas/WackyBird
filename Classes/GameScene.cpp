@@ -3,7 +3,6 @@
 #include "GameOverScene.h"
 
 
-
 USING_NS_CC;
 
 Scene* GameScene::createScene()

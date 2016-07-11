@@ -21,13 +21,12 @@ Bird::Bird( cocos2d::Layer *layer ){
 }
 
 void Bird::Fall(){
+
     if(true == IsFalling){
         flappyBird->setPositionX(visibleSize.width/2 + origin.x);
         flappyBird->setPositionY(flappyBird->getPositionY() - (BIRD_FALLING_SPEED * visibleSize.height));
     }else{
         flappyBird->setPositionX(visibleSize.width/2 + origin.x);
-        flappyBird->setPositionY(flappyBird->getPositionY() + (BIRD_FALLING_SPEED * visibleSize.height));
+        flappyBird->setPositionY(flappyBird->getPositionY() + (BIRD_FALLING_SPEED * visibleSize.height) * 2 );
     }
 }
-void Bird::Fly(){IsFalling = true;}
-void Bird::StopFliying();

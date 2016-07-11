@@ -15,7 +15,9 @@ Scene* GameScene::createScene()
     auto layer = GameScene::create();
     layer->SetPhysicsWorld( scene->getPhysicsWorld( ) );
     // add layer as a child to scene
-    
+    PhysicsWorld* world = scene->getPhysicsWorld();
+    auto gravity = Vec2(0.0f, 0.0f);
+    world->setGravity(gravity);
     /*
     PhysicsWorld* world = scene->getPhysicsWorld();
     Device::setAccelerometerEnabled(true);
@@ -84,16 +86,14 @@ bool GameScene::init()
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->setSwallowTouches(true);
     //CC_CALLBACK_2(GameScene::OnTouchBegan , this); is not working :( 
-    touchListener->onTouchBegan = [](cocos2d::Touch* touch, cocos2d::Event* event){
+    touchListener->onTouchBegan = [&](cocos2d::Touch* touch, cocos2d::Event* event){
         CCLOG("TOUCHED !!!");
-        bird->Fly();
-        this->scheduleOnce(schedule_selector(GameScene::StopFlying, BIRD_FLY_DURATION ) );
+        bird->Fly(); //* jni/../../../Classes/GameScene.cpp:89:9: error: 'this' was not captured for this lambda function
+        this->scheduleOnce(schedule_selector(GameScene::StopFlying), BIRD_FLY_DURATION); //* jni/../../../Classes/GameScene.cpp:89:9: error: 'this' was not captured for this lambda function
         return true;
     };
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener , this);
     // End tap listener
-
-
     this->scheduleUpdate();
 
     return true;
@@ -114,11 +114,12 @@ void GameScene::GoToGameOverScene(){
     Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME , scene ));
 }
 
+
+
 // methode for fly
 
-
 void GameScene::StopFlying(float dt){
-    bird->StopFlying();
+    bird->StopFliying();
 }
 
 void GameScene::update(float dt){

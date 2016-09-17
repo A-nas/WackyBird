@@ -17,7 +17,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../../Classes/GameScene.cpp \
                    ../../../Classes/GameOverScene.cpp \
                    ../../../Classes/Pipe.cpp \
-                   ../../../classes/Bird.cpp
+                   ../../../classes/Bird.cpp \
 #                   ../../../classes/B2DebugDrawLayer.cpp \
 #                   ../../../classes/GLES-Render.cpp
 

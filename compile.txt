@@ -1,0 +1,517 @@
+Updated project.properties
+Updated local.properties
+Updated file C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\proguard-project.txt
+make.exe: Entering directory `C:/Users/Anas/Desktop/WackyBirds/proj.android-studio/app'
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= AppDelegate.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= main.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= SplashScene.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= MainMenuScene.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= Bird.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= Pipe.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= GameScene.cpp
+[armeabi] Compile++ thumb: cocos2dcpp_shared <= GameOverScene.cpp
+[armeabi] StaticLibrary  : libcocos2d.a
+[armeabi] StaticLibrary  : libcocostudio.a
+[armeabi] StaticLibrary  : libcocosbuilder.a
+[armeabi] StaticLibrary  : libcocos3d.a
+[armeabi] StaticLibrary  : libspine.a
+[armeabi] StaticLibrary  : libui.a
+[armeabi] StaticLibrary  : libcocosdenshion.a
+[armeabi] StaticLibrary  : flatbuffers.a
+[armeabi] StaticLibrary  : libextension.a
+[armeabi] StaticLibrary  : libaudioengine.a
+[armeabi] StaticLibrary  : libbox2d.a
+[armeabi] StaticLibrary  : libnetwork.a
+[armeabi] StaticLibrary  : libcocos2dxinternal.a
+[armeabi] StaticLibrary  : librecast.a
+[armeabi] StaticLibrary  : libbullet.a
+[armeabi] StaticLibrary  : libcocos2dandroid.a
+[armeabi] StaticLibrary  : libcpufeatures.a
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.9] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] SharedLibrary  : libcocos2dcpp.so
+[armeabi] Install        : libcocos2dcpp.so => libs/armeabi/libcocos2dcpp.so
+make.exe: Leaving directory `C:/Users/Anas/Desktop/WackyBirds/proj.android-studio/app'
+Starting Build
+Settings evaluated using settings file 'C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\build.gradle'.
+Included projects: [root project 'proj.android-studio', project ':WackyBirds', project ':libcocos2dx']
+Parallel execution is an incubating feature.
+Evaluating root project 'proj.android-studio' using build file 'C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\build.gradle'.
+Evaluating project ':WackyBirds' using build file 'C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\build.gradle'.
+Creating configuration compile.
+Creating configuration apk.
+Creating configuration provided.
+Creating configuration wearApp.
+Creating configuration androidTestCompile.
+Creating configuration androidTestApk.
+Creating configuration androidTestProvided.
+Creating configuration androidTestWearApp.
+Creating configuration testCompile.
+Creating configuration testApk.
+Creating configuration testProvided.
+Creating configuration testWearApp.
+Creating configuration debugCompile.
+Creating configuration debugApk.
+Creating configuration debugProvided.
+Creating configuration debugWearApp.
+Creating configuration testDebugCompile.
+Creating configuration testDebugApk.
+Creating configuration testDebugProvided.
+Creating configuration testDebugWearApp.
+Creating configuration releaseCompile.
+Creating configuration releaseApk.
+Creating configuration releaseProvided.
+Creating configuration releaseWearApp.
+Creating configuration testReleaseCompile.
+Creating configuration testReleaseApk.
+Creating configuration testReleaseProvided.
+Creating configuration testReleaseWearApp.
+Evaluating project ':libcocos2dx' using build file 'C:\Users\Anas\Desktop\WackyBirds\cocos2d\cocos\platform\android\libcocos2dx\build.gradle'.
+Creating configuration compile.
+Creating configuration publish.
+Creating configuration provided.
+Creating configuration wearApp.
+Creating configuration androidTestCompile.
+Creating configuration androidTestPublish.
+Creating configuration androidTestProvided.
+Creating configuration androidTestWearApp.
+Creating configuration testCompile.
+Creating configuration testPublish.
+Creating configuration testProvided.
+Creating configuration testWearApp.
+Creating configuration debugCompile.
+Creating configuration debugPublish.
+Creating configuration debugProvided.
+Creating configuration debugWearApp.
+Creating configuration testDebugCompile.
+Creating configuration testDebugPublish.
+Creating configuration testDebugProvided.
+Creating configuration testDebugWearApp.
+Creating configuration releaseCompile.
+Creating configuration releasePublish.
+Creating configuration releaseProvided.
+Creating configuration releaseWearApp.
+Creating configuration testReleaseCompile.
+Creating configuration testReleasePublish.
+Creating configuration testReleaseProvided.
+Creating configuration testReleaseWearApp.
+All projects evaluated.
+Selected primary task 'assembleDebug' from project :
+Tasks to be executed: [task ':WackyBirds:preBuild', task ':WackyBirds:preDebugBuild', task ':WackyBirds:checkDebugManifest', task ':WackyBirds:preReleaseBuild', task ':libcocos2dx:compileLint', task ':libcocos2dx:copyReleaseLint', task ':libcocos2dx:mergeReleaseProguardFiles', task ':libcocos2dx:preBuild', task ':libcocos2dx:preReleaseBuild', task ':libcocos2dx:checkReleaseManifest', task ':libcocos2dx:prepareReleaseDependencies', task ':libcocos2dx:compileReleaseAidl', task ':libcocos2dx:compileReleaseRenderscript', task ':libcocos2dx:generateReleaseBuildConfig', task ':libcocos2dx:generateReleaseAssets', task ':libcocos2dx:mergeReleaseAssets', task ':libcocos2dx:generateReleaseResValues', task ':libcocos2dx:generateReleaseResources', task ':libcocos2dx:packageReleaseResources', task ':libcocos2dx:processReleaseManifest', task ':libcocos2dx:processReleaseResources', task ':libcocos2dx:generateReleaseSources', task ':libcocos2dx:processReleaseJavaRes', task ':libcocos2dx:compileReleaseJavaWithJavac', task ':libcocos2dx:packageReleaseJar', task ':libcocos2dx:compileReleaseNdk', task ':libcocos2dx:packageReleaseJniLibs', task ':libcocos2dx:packageReleaseLocalJar', task ':libcocos2dx:packageReleaseRenderscript', task ':libcocos2dx:bundleRelease', task ':WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary', task ':WackyBirds:prepareDebugDependencies', task ':WackyBirds:compileDebugAidl', task ':WackyBirds:compileDebugRenderscript', task ':WackyBirds:generateDebugBuildConfig', task ':WackyBirds:generateDebugAssets', task ':WackyBirds:mergeDebugAssets', task ':WackyBirds:generateDebugResValues', task ':WackyBirds:generateDebugResources', task ':WackyBirds:mergeDebugResources', task ':WackyBirds:processDebugManifest', task ':WackyBirds:processDebugResources', task ':WackyBirds:generateDebugSources', task ':WackyBirds:processDebugJavaRes', task ':WackyBirds:compileDebugJavaWithJavac', task ':WackyBirds:compileDebugNdk', task ':WackyBirds:compileDebugSources', task ':WackyBirds:preDexDebug', task ':WackyBirds:dexDebug', task ':WackyBirds:validateDebugSigning', task ':WackyBirds:packageDebug', task ':WackyBirds:zipalignDebug', task ':WackyBirds:assembleDebug', task ':libcocos2dx:copyDebugLint', task ':libcocos2dx:mergeDebugProguardFiles', task ':libcocos2dx:preDebugBuild', task ':libcocos2dx:checkDebugManifest', task ':libcocos2dx:prepareDebugDependencies', task ':libcocos2dx:compileDebugAidl', task ':libcocos2dx:compileDebugRenderscript', task ':libcocos2dx:generateDebugBuildConfig', task ':libcocos2dx:generateDebugAssets', task ':libcocos2dx:mergeDebugAssets', task ':libcocos2dx:generateDebugResValues', task ':libcocos2dx:generateDebugResources', task ':libcocos2dx:packageDebugResources', task ':libcocos2dx:processDebugManifest', task ':libcocos2dx:processDebugResources', task ':libcocos2dx:generateDebugSources', task ':libcocos2dx:processDebugJavaRes', task ':libcocos2dx:compileDebugJavaWithJavac', task ':libcocos2dx:packageDebugJar', task ':libcocos2dx:compileDebugNdk', task ':libcocos2dx:packageDebugJniLibs', task ':libcocos2dx:packageDebugLocalJar', task ':libcocos2dx:packageDebugRenderscript', task ':libcocos2dx:bundleDebug', task ':libcocos2dx:compileDebugSources', task ':libcocos2dx:assembleDebug']
+Using 4 parallel executor threads
+:WackyBirds:preBuild (Thread[Task worker,5,main]) started.
+:WackyBirds:preBuild
+:libcocos2dx:compileLint (Thread[main,5,main]) started.
+:libcocos2dx:compileLint
+Skipping task ':WackyBirds:preBuild' as it has no actions.
+:libcocos2dx:compileLint UP-TO-DATE
+Executing task ':libcocos2dx:compileLint' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:WackyBirds:preBuild (Thread[Task worker,5,main]) completed. Took 0.133 secs.
+:WackyBirds:preDebugBuild (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:preDebugBuild
+Skipping task ':WackyBirds:preDebugBuild' as it has no actions.
+:WackyBirds:preDebugBuild UP-TO-DATE
+:WackyBirds:preDebugBuild (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:WackyBirds:checkDebugManifest (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:checkDebugManifest
+Executing task ':WackyBirds:checkDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:WackyBirds:checkDebugManifest (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:WackyBirds:preReleaseBuild (Thread[Task worker,5,main]) started.
+:WackyBirds:preReleaseBuild
+Skipping task ':WackyBirds:preReleaseBuild' as it has no actions.
+:WackyBirds:preReleaseBuild UP-TO-DATE
+:WackyBirds:preReleaseBuild (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:WackyBirds:generateDebugBuildConfig (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:generateDebugBuildConfig
+:libcocos2dx:compileLint (Thread[main,5,main]) completed. Took 0.142 secs.
+:libcocos2dx:copyReleaseLint (Thread[main,5,main]) started.
+:libcocos2dx:copyReleaseLint
+Skipping task ':libcocos2dx:copyReleaseLint' as it has no source files.
+:libcocos2dx:copyReleaseLint UP-TO-DATE
+:libcocos2dx:copyReleaseLint (Thread[main,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:mergeReleaseProguardFiles (Thread[main,5,main]) started.
+:libcocos2dx:mergeReleaseProguardFiles
+Skipping task ':libcocos2dx:mergeReleaseProguardFiles' as it is up-to-date (took 0.206 secs).
+:libcocos2dx:mergeReleaseProguardFiles UP-TO-DATE
+Skipping task ':WackyBirds:generateDebugBuildConfig' as it is up-to-date (took 0.249 secs).
+:libcocos2dx:mergeReleaseProguardFiles (Thread[main,5,main]) completed. Took 0.246 secs.
+:WackyBirds:preBuild UP-TO-DATE
+:libcocos2dx:preBuild (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:generateDebugBuildConfig (Thread[Task worker Thread 3,5,main]) completed. Took 0.314 secs.
+:WackyBirds:generateDebugAssets (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:generateDebugAssets
+Skipping task ':WackyBirds:generateDebugAssets' as it has no actions.
+:WackyBirds:generateDebugAssets UP-TO-DATE
+:WackyBirds:generateDebugAssets (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:WackyBirds:generateDebugResValues (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:generateDebugResValues
+:libcocos2dx:preBuild
+Skipping task ':WackyBirds:generateDebugResValues' as it is up-to-date (took 0.001 secs).
+:libcocos2dx:preBuild UP-TO-DATE
+Skipping task ':libcocos2dx:preBuild' as it has no actions.
+:WackyBirds:generateDebugResValues (Thread[Task worker Thread 3,5,main]) completed. Took 0.003 secs.
+:WackyBirds:generateDebugResValues UP-TO-DATE
+:WackyBirds:processDebugJavaRes (Thread[Task worker,5,main]) started.
+:WackyBirds:processDebugJavaRes
+Skipping task ':WackyBirds:processDebugJavaRes' as it has no source files.
+:WackyBirds:processDebugJavaRes UP-TO-DATE
+:WackyBirds:processDebugJavaRes (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+:WackyBirds:compileDebugNdk (Thread[Task worker,5,main]) started.
+:WackyBirds:compileDebugNdk
+:libcocos2dx:preBuild (Thread[Task worker Thread 2,5,main]) completed. Took 0.01 secs.
+:libcocos2dx:preReleaseBuild (Thread[Task worker Thread 2,5,main]) started.
+Skipping task ':WackyBirds:compileDebugNdk' as it has no source files.
+:WackyBirds:compileDebugNdk UP-TO-DATE
+:WackyBirds:compileDebugNdk (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:preReleaseBuild
+:WackyBirds:validateDebugSigning (Thread[Task worker,5,main]) started.
+Skipping task ':libcocos2dx:preReleaseBuild' as it has no actions.
+:WackyBirds:validateDebugSigning UP-TO-DATE
+:libcocos2dx:preReleaseBuild (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:libcocos2dx:checkReleaseManifest (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:checkReleaseManifest
+Executing task ':libcocos2dx:checkReleaseManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Executing task ':WackyBirds:validateDebugSigning' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:libcocos2dx:checkReleaseManifest (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:libcocos2dx:prepareReleaseDependencies (Thread[main,5,main]) started.
+:libcocos2dx:prepareReleaseDependencies
+Executing task ':libcocos2dx:prepareReleaseDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:libcocos2dx:prepareReleaseDependencies (Thread[main,5,main]) completed. Took 0.004 secs.
+:libcocos2dx:compileReleaseAidl (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:compileReleaseAidl
+:WackyBirds:validateDebugSigning (Thread[Task worker,5,main]) completed. Took 0.061 secs.
+Skipping task ':libcocos2dx:compileReleaseAidl' as it is up-to-date (took 0.104 secs).
+:libcocos2dx:compileReleaseAidl UP-TO-DATE
+:libcocos2dx:compileReleaseAidl (Thread[Task worker Thread 3,5,main]) completed. Took 0.11 secs.
+:libcocos2dx:compileReleaseRenderscript (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:compileReleaseRenderscript
+Skipping task ':libcocos2dx:compileReleaseRenderscript' as it is up-to-date (took 0.014 secs).
+:libcocos2dx:compileReleaseRenderscript UP-TO-DATE
+:libcocos2dx:generateReleaseBuildConfig (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:generateReleaseBuildConfig
+:libcocos2dx:compileReleaseRenderscript (Thread[Task worker Thread 3,5,main]) completed. Took 0.03 secs.
+Skipping task ':libcocos2dx:generateReleaseBuildConfig' as it is up-to-date (took 0.063 secs).
+:libcocos2dx:generateReleaseBuildConfig UP-TO-DATE
+:libcocos2dx:generateReleaseBuildConfig (Thread[Task worker Thread 2,5,main]) completed. Took 0.067 secs.
+:libcocos2dx:generateReleaseAssets (Thread[Task worker,5,main]) started.
+:libcocos2dx:generateReleaseAssets
+Skipping task ':libcocos2dx:generateReleaseAssets' as it has no actions.
+:libcocos2dx:generateReleaseAssets UP-TO-DATE
+:libcocos2dx:generateReleaseAssets (Thread[Task worker,5,main]) completed. Took 0.006 secs.
+:libcocos2dx:mergeReleaseAssets (Thread[Task worker,5,main]) started.
+:libcocos2dx:mergeReleaseAssets
+Skipping task ':libcocos2dx:mergeReleaseAssets' as it is up-to-date (took 0.012 secs).
+:libcocos2dx:mergeReleaseAssets UP-TO-DATE
+:libcocos2dx:mergeReleaseAssets (Thread[Task worker,5,main]) completed. Took 0.042 secs.
+:libcocos2dx:generateReleaseResValues (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:generateReleaseResValues
+Skipping task ':libcocos2dx:generateReleaseResValues' as it is up-to-date (took 0.003 secs).
+:libcocos2dx:generateReleaseResValues UP-TO-DATE
+:libcocos2dx:generateReleaseResValues (Thread[Task worker Thread 2,5,main]) completed. Took 0.004 secs.
+:libcocos2dx:generateReleaseResources (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:generateReleaseResources
+Skipping task ':libcocos2dx:generateReleaseResources' as it has no actions.
+:libcocos2dx:generateReleaseResources UP-TO-DATE
+:libcocos2dx:generateReleaseResources (Thread[Task worker Thread 2,5,main]) completed. Took 0.006 secs.
+:libcocos2dx:packageReleaseResources (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:packageReleaseResources
+Skipping task ':libcocos2dx:packageReleaseResources' as it is up-to-date (took 0.007 secs).
+:libcocos2dx:packageReleaseResources UP-TO-DATE
+:libcocos2dx:packageReleaseResources (Thread[Task worker Thread 2,5,main]) completed. Took 0.009 secs.
+:libcocos2dx:processReleaseManifest (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:processReleaseManifest
+Skipping task ':libcocos2dx:processReleaseManifest' as it is up-to-date (took 0.007 secs).
+:libcocos2dx:processReleaseManifest UP-TO-DATE
+:libcocos2dx:processReleaseManifest (Thread[Task worker Thread 2,5,main]) completed. Took 0.1 secs.
+:libcocos2dx:processReleaseResources (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:processReleaseResources
+Skipping task ':libcocos2dx:processReleaseResources' as it is up-to-date (took 0.006 secs).
+:libcocos2dx:processReleaseResources UP-TO-DATE
+:libcocos2dx:processReleaseResources (Thread[Task worker Thread 2,5,main]) completed. Took 0.013 secs.
+:libcocos2dx:generateReleaseSources (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:generateReleaseSources
+Skipping task ':libcocos2dx:generateReleaseSources' as it has no actions.
+:libcocos2dx:generateReleaseSources UP-TO-DATE
+:libcocos2dx:generateReleaseSources (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:libcocos2dx:processReleaseJavaRes (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:processReleaseJavaRes
+Skipping task ':libcocos2dx:processReleaseJavaRes' as it has no source files.
+:libcocos2dx:processReleaseJavaRes UP-TO-DATE
+:libcocos2dx:processReleaseJavaRes (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:compileReleaseJavaWithJavac (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:compileReleaseJavaWithJavac
+Skipping task ':libcocos2dx:compileReleaseJavaWithJavac' as it is up-to-date (took 0.154 secs).
+:libcocos2dx:compileReleaseJavaWithJavac UP-TO-DATE
+:libcocos2dx:compileReleaseJavaWithJavac (Thread[Task worker Thread 2,5,main]) completed. Took 0.158 secs.
+:libcocos2dx:packageReleaseJar (Thread[Task worker,5,main]) started.
+:libcocos2dx:packageReleaseJar
+Skipping task ':libcocos2dx:packageReleaseJar' as it is up-to-date (took 0.233 secs).
+:libcocos2dx:packageReleaseJar UP-TO-DATE
+:libcocos2dx:packageReleaseJar (Thread[Task worker,5,main]) completed. Took 0.238 secs.
+:libcocos2dx:compileReleaseNdk (Thread[main,5,main]) started.
+:libcocos2dx:compileReleaseNdk
+Skipping task ':libcocos2dx:compileReleaseNdk' as it has no source files.
+:libcocos2dx:compileReleaseNdk UP-TO-DATE
+:libcocos2dx:compileReleaseNdk (Thread[main,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:packageReleaseJniLibs (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:packageReleaseJniLibs
+Skipping task ':libcocos2dx:packageReleaseJniLibs' as it has no source files.
+:libcocos2dx:packageReleaseJniLibs UP-TO-DATE
+:libcocos2dx:packageReleaseJniLibs (Thread[Task worker Thread 3,5,main]) completed. Took 0.007 secs.
+:libcocos2dx:packageReleaseLocalJar (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:packageReleaseLocalJar
+Skipping task ':libcocos2dx:packageReleaseLocalJar' as it is up-to-date (took 0.002 secs).
+:libcocos2dx:packageReleaseLocalJar UP-TO-DATE
+:libcocos2dx:packageReleaseLocalJar (Thread[Task worker Thread 2,5,main]) completed. Took 0.004 secs.
+:libcocos2dx:packageReleaseRenderscript (Thread[Task worker Thread 2,5,main]) started.
+:libcocos2dx:packageReleaseRenderscript
+Skipping task ':libcocos2dx:packageReleaseRenderscript' as it has no source files.
+:libcocos2dx:packageReleaseRenderscript UP-TO-DATE
+:libcocos2dx:packageReleaseRenderscript (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:bundleRelease (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:bundleRelease
+Skipping task ':libcocos2dx:bundleRelease' as it is up-to-date (took 0.003 secs).
+:libcocos2dx:bundleRelease UP-TO-DATE
+:libcocos2dx:bundleRelease (Thread[Task worker Thread 3,5,main]) completed. Took 0.013 secs.
+:WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary
+:libcocos2dx:copyDebugLint (Thread[Task worker,5,main]) started.
+:libcocos2dx:copyDebugLint
+Skipping task ':libcocos2dx:copyDebugLint' as it has no source files.
+:libcocos2dx:copyDebugLint UP-TO-DATE
+:libcocos2dx:copyDebugLint (Thread[Task worker,5,main]) completed. Took 0.004 secs.
+Skipping task ':WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary' as it is up-to-date (took 0.004 secs).
+:WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary UP-TO-DATE
+:libcocos2dx:mergeDebugProguardFiles (Thread[Task worker,5,main]) started.
+:libcocos2dx:mergeDebugProguardFiles
+:WackyBirds:prepareProjAndroidStudioLibcocos2dxUnspecifiedLibrary (Thread[Task worker Thread 3,5,main]) completed. Took 0.029 secs.
+:WackyBirds:prepareDebugDependencies (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:prepareDebugDependencies
+Executing task ':WackyBirds:prepareDebugDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Skipping task ':libcocos2dx:mergeDebugProguardFiles' as it is up-to-date (took 0.001 secs).
+:libcocos2dx:mergeDebugProguardFiles UP-TO-DATE
+:WackyBirds:prepareDebugDependencies (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:WackyBirds:compileDebugAidl (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:compileDebugAidl
+Skipping task ':WackyBirds:compileDebugAidl' as it is up-to-date (took 0.004 secs).
+:WackyBirds:compileDebugAidl UP-TO-DATE
+:WackyBirds:compileDebugAidl (Thread[Task worker Thread 2,5,main]) completed. Took 0.008 secs.
+:WackyBirds:compileDebugRenderscript (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:compileDebugRenderscript
+Skipping task ':WackyBirds:compileDebugRenderscript' as it is up-to-date (took 0.005 secs).
+:WackyBirds:compileDebugRenderscript UP-TO-DATE
+:WackyBirds:compileDebugRenderscript (Thread[Task worker Thread 2,5,main]) completed. Took 0.007 secs.
+:WackyBirds:mergeDebugAssets (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:mergeDebugAssets
+:libcocos2dx:mergeDebugProguardFiles (Thread[Task worker,5,main]) completed. Took 0.113 secs.
+:libcocos2dx:preDebugBuild (Thread[Task worker,5,main]) started.
+:libcocos2dx:preDebugBuild
+Skipping task ':libcocos2dx:preDebugBuild' as it has no actions.
+:libcocos2dx:preDebugBuild UP-TO-DATE
+:libcocos2dx:preDebugBuild (Thread[Task worker,5,main]) completed. Took 0.004 secs.
+:libcocos2dx:checkDebugManifest (Thread[Task worker,5,main]) started.
+:libcocos2dx:checkDebugManifest
+Executing task ':libcocos2dx:checkDebugManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:libcocos2dx:checkDebugManifest (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:libcocos2dx:prepareDebugDependencies (Thread[Task worker,5,main]) started.
+:libcocos2dx:prepareDebugDependencies
+Executing task ':libcocos2dx:prepareDebugDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:libcocos2dx:prepareDebugDependencies (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:compileDebugAidl (Thread[Task worker,5,main]) started.
+:libcocos2dx:compileDebugAidl
+Skipping task ':libcocos2dx:compileDebugAidl' as it is up-to-date (took 0.015 secs).
+:libcocos2dx:compileDebugAidl UP-TO-DATE
+:libcocos2dx:compileDebugAidl (Thread[Task worker,5,main]) completed. Took 0.018 secs.
+:libcocos2dx:compileDebugRenderscript (Thread[Task worker,5,main]) started.
+:libcocos2dx:compileDebugRenderscript
+Skipping task ':libcocos2dx:compileDebugRenderscript' as it is up-to-date (took 0.006 secs).
+:libcocos2dx:compileDebugRenderscript UP-TO-DATE
+:libcocos2dx:compileDebugRenderscript (Thread[Task worker,5,main]) completed. Took 0.008 secs.
+:libcocos2dx:generateDebugBuildConfig (Thread[Task worker,5,main]) started.
+:libcocos2dx:generateDebugBuildConfig
+Skipping task ':libcocos2dx:generateDebugBuildConfig' as it is up-to-date (took 0.007 secs).
+:libcocos2dx:generateDebugBuildConfig UP-TO-DATE
+:libcocos2dx:generateDebugBuildConfig (Thread[Task worker,5,main]) completed. Took 0.01 secs.
+:libcocos2dx:generateDebugAssets (Thread[Task worker,5,main]) started.
+:libcocos2dx:generateDebugAssets
+Skipping task ':libcocos2dx:generateDebugAssets' as it has no actions.
+:libcocos2dx:generateDebugAssets UP-TO-DATE
+:libcocos2dx:generateDebugAssets (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:libcocos2dx:mergeDebugAssets (Thread[Task worker,5,main]) started.
+:libcocos2dx:mergeDebugAssets
+Skipping task ':libcocos2dx:mergeDebugAssets' as it is up-to-date (took 0.004 secs).
+:libcocos2dx:mergeDebugAssets UP-TO-DATE
+:libcocos2dx:mergeDebugAssets (Thread[Task worker,5,main]) completed. Took 0.007 secs.
+:libcocos2dx:generateDebugResValues (Thread[Task worker,5,main]) started.
+:libcocos2dx:generateDebugResValues
+Skipping task ':libcocos2dx:generateDebugResValues' as it is up-to-date (took 0.002 secs).
+:libcocos2dx:generateDebugResValues UP-TO-DATE
+:libcocos2dx:generateDebugResValues (Thread[Task worker,5,main]) completed. Took 0.004 secs.
+:libcocos2dx:generateDebugResources (Thread[Task worker,5,main]) started.
+:libcocos2dx:generateDebugResources
+Skipping task ':libcocos2dx:generateDebugResources' as it has no actions.
+:libcocos2dx:generateDebugResources UP-TO-DATE
+:libcocos2dx:generateDebugResources (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:packageDebugResources (Thread[Task worker,5,main]) started.
+:libcocos2dx:packageDebugResources
+Skipping task ':libcocos2dx:packageDebugResources' as it is up-to-date (took 0.012 secs).
+:libcocos2dx:packageDebugResources UP-TO-DATE
+:libcocos2dx:packageDebugResources (Thread[Task worker,5,main]) completed. Took 0.014 secs.
+:libcocos2dx:processDebugManifest (Thread[Task worker,5,main]) started.
+:libcocos2dx:processDebugManifest
+Skipping task ':libcocos2dx:processDebugManifest' as it is up-to-date (took 0.003 secs).
+:libcocos2dx:processDebugManifest UP-TO-DATE
+:libcocos2dx:processDebugManifest (Thread[Task worker,5,main]) completed. Took 0.005 secs.
+:libcocos2dx:processDebugResources (Thread[Task worker,5,main]) started.
+:libcocos2dx:processDebugResources
+Skipping task ':libcocos2dx:processDebugResources' as it is up-to-date (took 0.007 secs).
+:libcocos2dx:processDebugResources UP-TO-DATE
+:libcocos2dx:processDebugResources (Thread[Task worker,5,main]) completed. Took 0.009 secs.
+:libcocos2dx:generateDebugSources (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:generateDebugSources
+Skipping task ':libcocos2dx:generateDebugSources' as it has no actions.
+:libcocos2dx:generateDebugSources UP-TO-DATE
+:libcocos2dx:generateDebugSources (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:processDebugJavaRes (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:processDebugJavaRes
+Skipping task ':libcocos2dx:processDebugJavaRes' as it has no source files.
+:libcocos2dx:processDebugJavaRes UP-TO-DATE
+:libcocos2dx:processDebugJavaRes (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:compileDebugJavaWithJavac (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:compileDebugJavaWithJavac
+Skipping task ':WackyBirds:mergeDebugAssets' as it is up-to-date (took 0.297 secs).
+:libcocos2dx:compileDebugJavaWithJavac UP-TO-DATE
+:WackyBirds:generateDebugResources (Thread[main,5,main]) started.
+:WackyBirds:generateDebugResources
+Skipping task ':WackyBirds:generateDebugResources' as it has no actions.
+:WackyBirds:generateDebugResources UP-TO-DATE
+:WackyBirds:generateDebugResources (Thread[main,5,main]) completed. Took 0.002 secs.
+:WackyBirds:mergeDebugResources (Thread[main,5,main]) started.
+:WackyBirds:mergeDebugResources
+:WackyBirds:mergeDebugAssets (Thread[Task worker Thread 2,5,main]) completed. Took 0.307 secs.
+Skipping task ':WackyBirds:mergeDebugResources' as it is up-to-date (took 0.126 secs).
+:WackyBirds:mergeDebugResources UP-TO-DATE
+:WackyBirds:mergeDebugResources (Thread[main,5,main]) completed. Took 0.128 secs.
+:WackyBirds:processDebugManifest (Thread[main,5,main]) started.
+:WackyBirds:processDebugManifest
+Skipping task ':WackyBirds:processDebugManifest' as it is up-to-date (took 0.005 secs).
+:WackyBirds:processDebugManifest UP-TO-DATE
+:WackyBirds:processDebugManifest (Thread[main,5,main]) completed. Took 0.011 secs.
+:WackyBirds:processDebugResources (Thread[Task worker,5,main]) started.
+:WackyBirds:processDebugResources
+Skipping task ':WackyBirds:processDebugResources' as it is up-to-date (took 0.083 secs).
+:WackyBirds:processDebugResources UP-TO-DATE
+:WackyBirds:processDebugResources (Thread[Task worker,5,main]) completed. Took 0.088 secs.
+:WackyBirds:generateDebugSources (Thread[Task worker,5,main]) started.
+:WackyBirds:generateDebugSources
+Skipping task ':WackyBirds:generateDebugSources' as it has no actions.
+:WackyBirds:generateDebugSources UP-TO-DATE
+:WackyBirds:generateDebugSources (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:WackyBirds:compileDebugJavaWithJavac (Thread[Task worker,5,main]) started.
+:WackyBirds:compileDebugJavaWithJavac
+Skipping task ':libcocos2dx:compileDebugJavaWithJavac' as it is up-to-date (took 0.464 secs).
+:WackyBirds:compileDebugJavaWithJavac UP-TO-DATE
+:libcocos2dx:compileDebugJavaWithJavac (Thread[Task worker Thread 3,5,main]) completed. Took 0.466 secs.
+:libcocos2dx:packageDebugJar (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:packageDebugJar
+Skipping task ':libcocos2dx:packageDebugJar' as it is up-to-date (took 0.022 secs).
+:libcocos2dx:packageDebugJar UP-TO-DATE
+:libcocos2dx:packageDebugJar (Thread[Task worker Thread 3,5,main]) completed. Took 0.023 secs.
+:libcocos2dx:compileDebugNdk (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:compileDebugNdk
+Skipping task ':libcocos2dx:compileDebugNdk' as it has no source files.
+:libcocos2dx:compileDebugNdk UP-TO-DATE
+:libcocos2dx:compileDebugNdk (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:packageDebugJniLibs (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:packageDebugJniLibs
+Skipping task ':libcocos2dx:packageDebugJniLibs' as it has no source files.
+:libcocos2dx:packageDebugJniLibs UP-TO-DATE
+:libcocos2dx:packageDebugJniLibs (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:packageDebugLocalJar (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:packageDebugLocalJar
+Skipping task ':libcocos2dx:packageDebugLocalJar' as it is up-to-date (took 0.002 secs).
+:libcocos2dx:packageDebugLocalJar UP-TO-DATE
+:libcocos2dx:packageDebugLocalJar (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:packageDebugRenderscript (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:packageDebugRenderscript
+Skipping task ':libcocos2dx:packageDebugRenderscript' as it has no source files.
+:libcocos2dx:packageDebugRenderscript UP-TO-DATE
+:libcocos2dx:packageDebugRenderscript (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:libcocos2dx:bundleDebug (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:bundleDebug
+Skipping task ':libcocos2dx:bundleDebug' as it is up-to-date (took 0.005 secs).
+:libcocos2dx:bundleDebug UP-TO-DATE
+:libcocos2dx:bundleDebug (Thread[Task worker Thread 3,5,main]) completed. Took 0.009 secs.
+:libcocos2dx:compileDebugSources (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:compileDebugSources
+Skipping task ':libcocos2dx:compileDebugSources' as it has no actions.
+:libcocos2dx:compileDebugSources UP-TO-DATE
+:libcocos2dx:compileDebugSources (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:libcocos2dx:assembleDebug (Thread[Task worker Thread 3,5,main]) started.
+:libcocos2dx:assembleDebug
+Skipping task ':libcocos2dx:assembleDebug' as it has no actions.
+:libcocos2dx:assembleDebug UP-TO-DATE
+:libcocos2dx:assembleDebug (Thread[Task worker Thread 3,5,main]) completed. Took 0.0 secs.
+Skipping task ':WackyBirds:compileDebugJavaWithJavac' as it is up-to-date (took 0.076 secs).
+:WackyBirds:mergeDebugAssets UP-TO-DATE
+:WackyBirds:compileDebugJavaWithJavac (Thread[Task worker,5,main]) completed. Took 0.173 secs.
+:WackyBirds:compileDebugSources (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:compileDebugSources
+Skipping task ':WackyBirds:compileDebugSources' as it has no actions.
+:WackyBirds:compileDebugSources UP-TO-DATE
+:WackyBirds:compileDebugSources (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:WackyBirds:preDexDebug (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:preDexDebug
+Skipping task ':WackyBirds:preDexDebug' as it is up-to-date (took 0.005 secs).
+:WackyBirds:preDexDebug UP-TO-DATE
+:WackyBirds:preDexDebug (Thread[Task worker Thread 3,5,main]) completed. Took 0.01 secs.
+:WackyBirds:dexDebug (Thread[Task worker Thread 3,5,main]) started.
+:WackyBirds:dexDebug
+Skipping task ':WackyBirds:dexDebug' as it is up-to-date (took 0.009 secs).
+:WackyBirds:dexDebug UP-TO-DATE
+:WackyBirds:dexDebug (Thread[Task worker Thread 3,5,main]) completed. Took 0.015 secs.
+:WackyBirds:packageDebug (Thread[Task worker Thread 2,5,main]) started.
+:WackyBirds:packageDebug
+Executing task ':WackyBirds:packageDebug' (up-to-date check took 0.062 secs) due to:
+  Input file C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\libs\armeabi\libcocos2dcpp.so has changed.
+:WackyBirds:packageDebug (Thread[Task worker Thread 2,5,main]) completed. Took 3.573 secs.
+:WackyBirds:zipalignDebug (Thread[main,5,main]) started.
+:WackyBirds:zipalignDebug
+Executing task ':WackyBirds:zipalignDebug' (up-to-date check took 0.001 secs) due to:
+  Input file C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\build\outputs\apk\WackyBirds-debug-unaligned.apk has changed.
+Starting process 'command 'C:\Users\Anas\AppData\Local\Android\sdk\build-tools\22.0.1\zipalign.exe''. Working directory: C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app Command: C:\Users\Anas\AppData\Local\Android\sdk\build-tools\22.0.1\zipalign.exe -f 4 C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\build\outputs\apk\WackyBirds-debug-unaligned.apk C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app\build\outputs\apk\WackyBirds-debug.apk
+Successfully started process 'command 'C:\Users\Anas\AppData\Local\Android\sdk\build-tools\22.0.1\zipalign.exe''
+:WackyBirds:zipalignDebug (Thread[main,5,main]) completed. Took 0.618 secs.
+:WackyBirds:assembleDebug (Thread[main,5,main]) started.
+:WackyBirds:assembleDebug
+Skipping task ':WackyBirds:assembleDebug' as it has no actions.
+:WackyBirds:assembleDebug (Thread[main,5,main]) completed. Took 0.001 secs.
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 35.621 secs
+Stopped 0 compiler daemon(s).
+Building mode: debug
+Using Android Studio project : C:\Users\Anas\Desktop\WackyBirds\proj.android-studio
+Android platform not specified, searching a default one...
+running: '"C:\Users\Anas\AppData\Local\Android\sdk\tools\android" update project -t android-10 -p C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app'
+
+Building native...
+NDK build mode: debug
+NDK_TOOLCHAIN_VERSION: 4.9
+running: '"C:\Users\Anas\Desktop\Developement\android-ndk-r10e\ndk-build" -C C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\app -j4 NDK_MODULE_PATH=C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\../cocos2d;C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\../cocos2d/cocos;C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\../cocos2d/external NDK_TOOLCHAIN_VERSION=4.9 NDK_DEBUG=1'
+
+Building apk...
+running: '"C:\Users\Anas\Desktop\WackyBirds\proj.android-studio\gradlew.bat" --parallel --info assembleDebug'
+
+Move apk to C:\Users\Anas\Desktop\WackyBirds\bin\debug\android
+Build succeed.

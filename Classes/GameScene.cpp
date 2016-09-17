@@ -9,7 +9,12 @@ Scene* GameScene::createScene()
 {
     // 'scene' is an autorelease object
     auto scene = Scene::createWithPhysics( );
-    //scene->getPhysicsWorld( )->setDebugDrawMask( PhysicsWorld::DEBUGDRAW_ALL ); //PROBLEM TO DRAW DEBUG MODE :(
+    scene->getPhysicsWorld( )->setDebugDrawMask( PhysicsWorld::DEBUGDRAW_ALL ); //PROBLEM TO DRAW DEBUG MODE :(
+    //addChild(B2DebugDrawLayer::create( scene , 32 ) , 9999 ); integration de github didnt work :(
+    // try this on the top with the two libraries included on the android mk file
+//#if CC_ENABLE_CHIPMUNK_INTEGRATION
+//    _debugLayer->setVisible(! _debugLayer->isVisible());
+//#endif
     
     // 'layer' is an autorelease object
     auto layer = GameScene::create();

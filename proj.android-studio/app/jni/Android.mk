@@ -18,8 +18,6 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../../Classes/GameOverScene.cpp \
                    ../../../Classes/Pipe.cpp \
                    ../../../classes/Bird.cpp \
-#                   ../../../classes/B2DebugDrawLayer.cpp \
-#                   ../../../classes/GLES-Render.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 

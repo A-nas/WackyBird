@@ -11,6 +11,19 @@ android {
         versionCode 1
         versionName "1.0"
     }
+	
+	ext {
+        cocospath = "/../../../Developement/cocos2d-x-3.10"
+    }
+	
+	externalNativeBuild {
+
+    ndkBuild {
+        targets "MyGame"
+        arguments "NDK_MODULE_PATH=$cocospath:$cocospath/cocos:$cocospath/external:$cocospath/cocos/prebuilt-mk:$cocospath/extensions"
+        arguments "-j" + Runtime.runtime.availableProcessors()
+        abiFilters "armeabi"
+            }
 
     sourceSets.main {
         java.srcDir "src"

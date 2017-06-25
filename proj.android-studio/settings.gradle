@@ -1,4 +1,4 @@
 include ':libcocos2dx'
-project(':libcocos2dx').projectDir = new File(settingsDir, '../cocos2d/cocos/platform/android/libcocos2dx')
+project(':libcocos2dx').projectDir = new File(settingsDir, '../../Developement/cocos2d-x-3.10/cocos/platform/android/libcocos2dx')
 include ':WackyBirds'
 project(':WackyBirds').projectDir = new File(settingsDir, 'app')
